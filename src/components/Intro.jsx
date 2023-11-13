@@ -18,7 +18,7 @@ const Intro = () => {
                     <div className="text">
                         <div>It always</div>
                         <div>seems impossible</div>
-                        <div>until it's done.</div>
+                        <div>until its done.</div>
                     </div>
                     <div className="img"></div>
                 </div>
