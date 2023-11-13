@@ -1,3 +1,4 @@
+import "@/assets/scss/style.scss";
 
 export const metadata = {
   title: 'Next.js를 이용한 포트폴리오 사이트 만들기',

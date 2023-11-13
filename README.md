@@ -20,12 +20,13 @@
 - 단점: 초기 로딩 속도가 느리며, 검색 엔진 최적화가 CSR에 비해 어려울 수 있습니다. 빈 페이지나 로딩 스피너를 보여주고, 자바스크립트가 로드되고 실행된 후에 사용자에게 완전한 콘텐츠가 보여집니다.
 
 ## 특징
-- 메타데이터 생성 : 검색노출 안되던 단점 보완
-- 프롭스
+- 메타데이터 생성 : Next.js는 일부 메타데이터 생성과 관련된 기능을 내장하고 있어, 검색 엔진 최적화 및 소셜 미디어 미리보기 등에서 개발자들이 편리하게 이점을 얻을 수 있습니다.
+- Next.js에서 파일 시스템 기반의 동적 라우팅을 사용할 때, 페이지 구조를 만들면 해당 폴더와 파일들이 자동으로 라우팅되어 포함됩니다. 이러한 동작을 파일 시스템 기반의 라우팅이라고 합니다.
+- 웹폰트, 이미지 자동 최적화 :  `import Image from 'next/image'` 사이즈 필요 `<Image src={port.img} alt={port.name} width={420} height={220} />`
 
 ## 작업 순서
 1. 폴더를 만들고 next 설치
-2. 기본셋팅 폴더생성
+2. 기본셋팅 폴더생성 및 깃 업로드 
 
 ## 실행
 
@@ -34,13 +35,38 @@
 ## 설치
 
 1. next 최신버전 설치  : `npx create-next-app@latest 프로젝트 이름`
+2. gsap 설치 : `npm i gsap`
+3. sass 설치 : `npm i sass`
+4. lenis 설치 : `npm i @studio-freight/lenis`
 
 ## 트러블 슈팅
 <details>
-<summary>에러</summary>
+<summary>ReactServerComponentsError</summary>
 <!-- summary 아래 한칸 공백 두어야함 -->
 
-## (해결) : 
+## (해결) : javascript, jquery(CSR)브라우저에서 작동
+- 최상단에 "use client"로 설정
+`./src\app\page.js   
+ReactServerComponentsError: You're importing a component that needs useEffect. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default. Learn more: https://nextjs.org/docs/getting-started/react-essentials 
+   ╭─[C:\Users\line\Documents\GitHub\myeonghun\next-project\src\app\page.js:1:1]
+ 1 │ import React, { useEffect } from 'react'
+   ·                 ─────────
+ 2 │ import Skip from '@/components/Skip'
+ 3 │ import Header from '@/components/Header'
+ 4 │ import Intro from '@/components/Intro'
+   ╰────
+Maybe one of these should be marked as a client entry with "use client":
+./src\app\page.js`
+
+</details>
+
+<details>
+<summary>Attempted import error</summary>
+<!-- summary 아래 한칸 공백 두어야함 -->
+
+## (해결) : Attempted import error
+- `export function link()... ` -> `const link = () => ... export default link;`
+`Attempted import error: '@/utils/link' does not contain a default export (imported as 'link').`
 
 </details>
 

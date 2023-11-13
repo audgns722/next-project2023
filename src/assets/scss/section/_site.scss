@@ -1,0 +1,135 @@
+.site__inner {
+    padding: 16px;
+}
+
+.site__title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 48%;
+    height: 4.9vw;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: var(--bigNum-color);
+    border-bottom: 5px solid var(--border-color);
+}
+
+.site__title em {
+    font-family: var(--mainKor-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.site__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.site__item {
+    background-color: var(--subBg200);
+    padding: 3vw;
+    text-align: center;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    color: var(--mainFont-color);
+    position: sticky;
+    left: 0;
+}
+
+.site__item.s1 {
+    background-color: #0e141a;
+    top: 180px;
+}
+
+.site__item.s2 {
+    background-color: #1c2235;
+    top: 200px
+}
+
+.site__item.s3 {
+    background-color: #29314d;
+    top: 220px;
+}
+
+.site__item.s4 {
+    background-color: #343b57;
+    top: 240px;
+}
+
+.site__item .num {
+    display: block;
+    font-size: 5vw;
+    font-weight: 700;
+    color: var(--border-color);
+    line-height: 1;
+    padding-top: 10px;
+    text-align-last: left;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+}
+
+.site__item .text {
+    font-size: 3vw;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: var(--subFont-color);
+    font-family: var(--mainEng-font);
+    font-weight: 700;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+    letter-spacing: 0.7vw;
+}
+
+.site__item .title {
+    padding-bottom: 1vw;
+    font-size: 1.5vw;
+    font-family: var(--mainKor-font);
+    font-weight: 500;
+    letter-spacing: 1vw;
+    display: inline-block;
+    border-bottom: 5px solid var(--subBg200);
+    margin-bottom: 3vw;
+}
+
+.site__item .btn a {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 1.5vw;
+    padding: 10px 20px;
+    background-color: var(--border-color);
+    color: var(--black);
+    border-radius: 15px;
+    transition: all 0.3s;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+
+.site__item .btn a:hover {
+    background-color: var(--mainBg-color);
+    color: var(--mainIntro-color);
+}
+
+.site__item .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1nvw;
+    font-family: var(--mainEng-font);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--white100);
+}
+
+.site__item .info span em {
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: var(--mainFont-color);
+}

@@ -1,0 +1,59 @@
+:root {
+    --mainEng-font: "Montserrat";
+    --mainKor-font: "nanumSquareNeo";
+    --mainNum-font: "gmarket";
+    --mainIntro-font: "sora";
+
+    --mainFont-color: #c6c4c3;
+    --subFont--color: #fdfdfc;
+    --subFont-color: #e2b764;
+    --mainBg-color: #c6c4c3;
+    --mainIntro-color: #0e141a;
+    --mainIntrotext : #e2b764;
+    --headerfooter: #0e141a;;
+    --mainIntroBg-color: #0e141a;
+    --bigNum-color : #212a23;
+    --border-color : #e2b764;
+
+    --white: #ffffff;
+    --white100: #d8d8d8;
+    --white200: #dddddd;
+    --white300: #c1c1c1;
+    --white400: #b3b3b3;
+    --white500: #a4a4a4;
+
+    --black: #000000;
+    --black100: #252525;
+    --black200: #454545;
+    --black300: #656565;
+    --black400: #858585;
+    --black500: #999999;
+
+    /* 기본 폰트 설정 */
+    font-family: var(--mainEng-font), var(--mainKor-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* 폰트를 부드럽게 렌더링하기 위한 속성  */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* 아이폰 가로 모드에서 글씨 확대 금지 */
+    -webkit-text-size-adjust: 100%;
+}
+
+@media(max-width : 800px) {
+    :root {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+body {
+    font-family: var(--mainEng-font);
+    color: var(--black);
+    background-color: var(--mainBg-color);
+}
